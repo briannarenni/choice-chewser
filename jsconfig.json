@@ -9,7 +9,34 @@
     "sourceMap": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "checkJs": false
+    "checkJs": false,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./*"
+      ],
+      "@src/*": [
+        "./src/*"
+      ],
+      "@css/*": [
+        "./src/assets/css/*"
+      ],
+      "@js/*": [
+        "./src/js/*"
+      ],
+      "@lib/*": [
+        "./src/lib/*"
+      ],
+      "@blocks/*": [
+        "./src/lib/blocks/*"
+      ],
+      "@components/*": [
+        "./src/lib/components/*"
+      ],
+      "@containers/*": [
+        "./src/lib/containers/*"
+      ],
+    }
   },
   "include": [
     "src/**/*.d.ts",
