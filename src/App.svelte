@@ -1,13 +1,13 @@
 <script>
   import { ModeWatcher } from 'mode-watcher';
-  import ThemeBtn from '@components/ThemeBtn.svelte';
+  import MainTabs from '@containers/MainTabs.svelte';
 </script>
 
+<ModeWatcher />
 <main>
-  <ModeWatcher />
+  <header>
+    <h1 class="scroll-m-20 text-xl font-extrabold text-center mt-3 mb-4">Choice Chewser</h1>
+  </header>
 
-  <h1 class="scroll-m-20 text-xl font-extrabold">Choice Chewser</h1>
+  <MainTabs />
 </main>
-
-<style>
-</style>

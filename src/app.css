@@ -3,8 +3,14 @@
 @tailwind utilities;
 
 #app {
-  max-width: 500px;
-  max-height: 350px;
+  /* !Remove ! */
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5rem;
+  width: 500px;
+  height: 500px;
 }
 
 @layer base {
@@ -38,7 +44,9 @@
     --input: 20 5.9% 90%;
     --ring: 24.6 95% 53.1%;
     --radius: 1rem;
+
   }
+
   .dark {
     --background: 20 14.3% 4.1%;
     --foreground: 60 9.1% 97.8%;
@@ -48,7 +56,7 @@
     --popover-foreground: 60 9.1% 97.8%;
     --primary: 20.5 90.2% 48.2%;
     --primary-foreground: 60 9.1% 97.8%;
-    --secondary: 12 6.5% 15.1%;
+    --secondary: 60 1% 20%;
     --secondary-foreground: 60 9.1% 97.8%;
     --muted: 12 6.5% 15.1%;
     --muted-foreground: 24 5.4% 63.9%;
