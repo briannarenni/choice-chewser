@@ -7,10 +7,12 @@
 
 <Tabs.Root value="coinflip" class="w-[400px]">
   <Tabs.List class="grid w-full grid-cols-2">
-    <Tabs.Trigger value="coinflip" class="border-b border-transparent data-[state=active]:bg-primary"
-      >Coin Flip</Tabs.Trigger>
-    <Tabs.Trigger value="multi" class="border-b border-transparent data-[state=active]:bg-primary"
-      >Multi-Choice</Tabs.Trigger>
+    <Tabs.Trigger value="coinflip" class="border-b border-transparent data-[state=active]:bg-primary">
+      Coin Flip
+    </Tabs.Trigger>
+    <Tabs.Trigger value="multi" class="border-b border-transparent data-[state=active]:bg-primary">
+      Multi-Choice
+    </Tabs.Trigger>
   </Tabs.List>
   <CoinTab />
   <MultiTab />

@@ -1,19 +1,27 @@
 <script>
+  import { flipCoin } from '@js/logic.js';
   import { Avatar } from '@components/ui/avatar/index.js';
   import { Button } from '@components/ui/button/index.js';
   import * as Card from '@components/ui/card/index.js';
   import heads from '/src/assets/heads.svg';
   import tails from '/src/assets/tails.svg';
 
+  let btnText = 'Chewse';
+  let disabled = false;
   let showHeads = true;
   let isFlipping = false;
-  let disabled = false;
-  let caption = '...';
-  let btnText = 'Chewse!';
+  let caption = 'Ready?';
 
-  const randomPick = () => {
-    let randNum = Math.floor(Math.random() * 2) + 1;
-    showHeads = randNum === 1;
+  const flip = () => {
+    caption = '...';
+    disabled = true;
+    btnText = 'Flipping...';
+    isFlipping = true;
+    showHeads = flipCoin();
+    setTimeout(() => {
+      isFlipping = false;
+    }, 1200);
+    outcome();
   };
 
   const outcome = () => {
@@ -22,18 +30,6 @@
       disabled = false;
       btnText = 'Chewse Again';
     }, 2000);
-  };
-
-  const flip = () => {
-    caption = '...';
-    disabled = true;
-    btnText = 'Flipping';
-    isFlipping = true;
-    randomPick();
-    setTimeout(() => {
-      isFlipping = false;
-    }, 1200);
-    outcome();
   };
 </script>
 
@@ -48,12 +44,12 @@
     </div>
   </div>
   <div>
-    <p class="text-center text-sm my-3 font-medium">{caption}</p>
+    <p class="text-center my-3 roboto-500 text-base">{caption}</p>
   </div>
 </Card.Content>
-<Card.Footer class="pt-3">
-  <Button class="mx-auto" on:click={flip} {disabled}>
-    <span class:italic={isFlipping}>{btnText}</span>
+<Card.Footer class="pt-2">
+  <Button class="mx-auto font-medium" on:click={flip} {disabled}>
+    <span class:italic={disabled}>{btnText}</span>
   </Button>
 </Card.Footer>
 

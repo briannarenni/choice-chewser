@@ -9,4 +9,5 @@
 </header>
 <main>
   <MainTabs />
+<!-- TODO: Settings -->
 </main>
