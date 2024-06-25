@@ -12,3 +12,14 @@ export function range (min, max) {
 export function outOfTen () {
   return Math.floor(Math.random() * (10 - 1 + 1)) + 1;
 }
+
+export function detectBrowser () {
+  const userAgent = navigator.userAgent.toLowerCase();
+  if (userAgent.includes('chrome')) {
+    // TODO: Add store link later
+    return 'https://chrome.google.com/webstore/detail/your-extension-id';
+  } else if (userAgent.includes('firefox')) {
+    // TODO: Add store link later
+    return 'https://addons.mozilla.org/en-US/firefox/addon/your-extension-id';
+  }
+}

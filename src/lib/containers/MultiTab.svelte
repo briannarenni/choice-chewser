@@ -7,7 +7,7 @@
 
 <Tabs.Content value="multi">
   <Card.Root>
-    <Card.Header>
+    <Card.Header class="px-6 py-4">
       <Card.Description class="text-center font-light">Random number from 1-10:</Card.Description>
     </Card.Header>
     <MultiChoice />

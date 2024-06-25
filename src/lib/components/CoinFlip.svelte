@@ -44,7 +44,7 @@
     </div>
   </div>
   <div>
-    <p class="text-center my-3 roboto-500 text-base">{caption}</p>
+    <p class="text-center my-1 roboto-500 text-base">{caption}</p>
   </div>
 </Card.Content>
 <Card.Footer class="pt-2">
@@ -53,30 +53,4 @@
   </Button>
 </Card.Footer>
 
-<style>
-  .coin-wrap {
-    perspective: 1000px;
-    width: 80px;
-    height: 80px;
-  }
-
-  .coin {
-    width: 100%;
-    height: 100%;
-    transition: transform 1s;
-    transform-style: preserve-3d;
-    position: relative;
-  }
-
-  .coin img {
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    position: absolute;
-    top: 0;
-  }
-
-  .isFlipping {
-    transform: rotateY(180deg);
-  }
-</style>
+<!-- * CSS rules in style.css -->

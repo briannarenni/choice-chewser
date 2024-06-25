@@ -7,7 +7,7 @@
 
 <Tabs.Content value="coinflip">
   <Card.Root>
-    <Card.Header>
+    <Card.Header class="px-6 py-4">
       <Card.Description class="text-center font-light">For those classic 2 choice dilemmas.</Card.Description>
     </Card.Header>
     <CoinFlip />
