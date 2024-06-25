@@ -2,7 +2,7 @@
   import * as Tabs from '@components/ui/tabs/index.js';
   import * as Card from '@components/ui/card/index.js';
   import { Button } from '@components/ui/button/index.js';
-  import MultiChoice from '@blocks/MultiChoice.svelte';
+  import MultiChoice from '@components/MultiChoice.svelte';
 </script>
 
 <Tabs.Content value="multi">

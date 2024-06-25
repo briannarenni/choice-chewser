@@ -1,8 +1,8 @@
 <script>
   import * as Tabs from '@components/ui/tabs/index.js';
   import * as Card from '@components/ui/card/index.js';
-  import CoinTab from '@blocks/CoinTab.svelte';
-  import MultiTab from '@blocks/MultiTab.svelte';
+  import CoinTab from '@containers/CoinTab.svelte';
+  import MultiTab from '@containers/MultiTab.svelte';
 </script>
 
 <Tabs.Root value="coinflip" class="w-[400px]">
