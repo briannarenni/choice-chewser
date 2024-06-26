@@ -9,7 +9,7 @@
   onMount(() => (extLink = detectBrowser()));
 </script>
 
-<footer class="flex justify-between items-center w-3/4">
+<footer class="flex justify-between items-center mb-2 w-3/4">
   <a href="https://github.com/briannarenni/choice-chewser" class="group relative flex items-center" target="_blank">
     <GithubLogo
       class="h-[35px] w-[35px] transition-transform transform group-hover:scale-110 dark:group-hover:scale-110" />
