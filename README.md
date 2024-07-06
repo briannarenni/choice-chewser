@@ -12,10 +12,26 @@ A simple extension to flip a coin or pick a number 1-10 in a toolbar popup. Crea
 
 - Node.js (v20.9.0)
 - npm (v10.8.1)
+- Developed on MacOS Sonoma (14.5)
 
 ## Installation & Build
 
-Run `npm install` first and build with `npm run build`, which will also run the **copyToDist.js** script at the same time. This ensures `manifest.json` is also copied over to the `dist/` folder during the build process.
+Once in the project directory, run `npm install` first.
+
+Running `npm run build` will run two scripts synchronously:
+
+```
+vite build && node copyToDist.js
+```
+
+The `copyToDist.js` script ensures `manifest.json` is also copied over to the `dist/` folder in the build output.
 
 ## Packaging the Extension
-The `web-ext` CLI tool was used for packaging by running `npx web-ext build --source-dir=dist --artifacts-dir=web-ext-artifacts`.
+
+Use the `web-ext` CLI tool to package the extension:
+
+```
+npx web-ext build --source-dir=dist --artifacts-dir=web-ext-artifacts
+```
+
+This will create a web-ext-artifacts folder with the packaged extension zip file inside.
