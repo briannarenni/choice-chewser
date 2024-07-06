@@ -21,7 +21,7 @@
       "48": "favicon/favicon-48x48.png"
     }
   },
-  "applications": {
+  "browser_specific_settings": {
     "gecko": {
       "strict_min_version": "58.0",
       "id": "choicechewser2@example.com"
