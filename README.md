@@ -1,6 +1,8 @@
 # Choice Chewser Extension
 
-A simple extension to flip a coin or pick a number 1-10 in a toolbar popup. Created as a way to explore Firefox extension development.
+A simple extension to flip a coin or pick a number 1-10 in a toolbar popup. Created as a way to explore Firefox extension development, **not maintained**.
+
+[Extension Store Link](https://addons.mozilla.org/en-US/firefox/addon/choice-chewser/)
 
 ## Built With:
 
