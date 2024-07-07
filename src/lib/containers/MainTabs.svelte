@@ -1,6 +1,5 @@
 <script>
   import * as Tabs from '@components/ui/tabs/index.js';
-  import * as Card from '@components/ui/card/index.js';
   import CoinTab from '@containers/CoinTab.svelte';
   import MultiTab from '@containers/MultiTab.svelte';
 </script>
