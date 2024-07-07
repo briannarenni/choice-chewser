@@ -2,7 +2,6 @@
   import heads from '/src/assets/heads.svg';
   import tails from '/src/assets/tails.svg';
   import { flipCoin } from '@js/logic.js';
-  import { Avatar } from '@components/ui/avatar/index.js';
   import { Button } from '@components/ui/button/index.js';
   import * as Card from '@components/ui/card/index.js';
 

@@ -16,10 +16,9 @@ export function outOfTen () {
 export function detectBrowser () {
   const userAgent = navigator.userAgent.toLowerCase();
   if (userAgent.includes('chrome')) {
-    // TODO: Add store link later
+    // * If published on google store
     return 'https://chrome.google.com/webstore/detail/your-extension-id';
   } else if (userAgent.includes('firefox')) {
-    // TODO: Add store link later
-    return 'https://addons.mozilla.org/en-US/firefox/addon/your-extension-id';
+    return 'https://addons.mozilla.org/en-US/firefox/addon/choice-chewser/';
   }
 }
